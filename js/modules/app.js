@@ -69,7 +69,7 @@ export default class App {
 
             newObj.list.push({
 
-                temperature: Number(obj.main.temp),
+                temperature: obj.main.temp,
                 feelsLike: obj.main.feels_like,
                 humidity: obj.main.humidity,
                 wind: obj.wind.speed,
