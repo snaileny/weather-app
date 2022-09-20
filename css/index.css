@@ -1,0 +1,194 @@
+:root {
+
+    --day: rgb(51, 147, 244);
+    --night: rgb(22, 48, 87);
+
+}
+
+.day {
+
+    background-color: var(--day);
+    color: black;
+
+}
+
+.night {
+
+    background-color: var(--night);
+    color: white;
+
+}
+
+* {
+
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+body {
+
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+
+}
+
+.app {
+
+    height: 100vh;
+    width: 800px;
+    margin: 4rem 0 0 0;
+
+}
+
+
+.app-header {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    font-size: 2rem;
+
+}
+
+.app-header > div {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+#unit-selection {
+
+    height: 2rem;
+    max-width: 10rem;
+    font-size: 1.2rem;
+    margin: 0 8px 0 0;
+    padding: 4px;
+
+}
+
+#location-input {
+
+    height: 2rem;
+    max-width: 12rem;
+    font-size: 1.2rem;
+    padding: 4px;
+
+}
+
+#location-input::after {
+
+    content: "Enter to search.";
+
+}
+
+.app-body {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.current-weather {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 16px;
+
+}
+
+.current-weather-temperature {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+#current-day {
+
+    font-size: 3rem;
+    text-align: right;
+    margin: 0 0 6px 0;
+
+}
+
+#current-temperature {
+
+    display: inline;
+    font-size: 4rem;
+
+}
+
+#current-weather-state {
+
+    font-size: 3rem;
+
+}
+
+#current-weather-icon {
+
+    max-height: 150px;
+    max-width: 150px;
+
+}
+
+
+.current-weather-properties {
+
+    line-height: 1.2;
+    font-size: 1.2rem;
+    text-align: right;
+
+}
+
+.weather-calender {
+
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 4rem 0 0 0;
+
+}
+
+.calender-list {
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.calender-element {
+
+    height: 16rem;
+    width: 12rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+.calender-element > div {
+
+    text-align: center;
+
+}
