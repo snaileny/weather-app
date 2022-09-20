@@ -6,7 +6,6 @@ export default class UI {
 
             locationInfo: document.querySelector("#location-info"),
             unitSelector: document.querySelector("#unit-selection"),
-
             currentWeather: document.querySelector(".current-weather"),
             currentTemperature: document.querySelector("#current-temperature"),
             currentWeatherState: document.querySelector("#current-weather-state"),
