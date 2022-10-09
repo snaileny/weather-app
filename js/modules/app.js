@@ -89,7 +89,7 @@ export default class App {
 
         try {
 
-            const response = await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${this.apiKey}`);
+            const response = await fetch(`https://api.openweathermap.org/geo/1.0/direct?q=${cityName}&appid=${this.apiKey}`);
             const geocodeObj = await response.json();
 
             return this.parseLocation(geocodeObj);

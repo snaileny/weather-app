@@ -67,7 +67,7 @@ export default class UI {
 
         this.elements.currentTemperature.textContent = this.formatTemperature(weather.list[0].temperature);
         this.elements.currentWeatherState.textContent = weather.list[0].state;
-        this.elements.currentWeatherIcon.src = `http://openweathermap.org/img/wn/${weather.list[0].icon}@4x.png`;
+        this.elements.currentWeatherIcon.src = `https://openweathermap.org/img/wn/${weather.list[0].icon}@4x.png`;
 
         this.elements.currentDay.textContent = currentDay;
         this.elements.feelsLike.textContent = "Feels Like: " + this.formatTemperature(weather.list[0].feelsLike);
@@ -110,7 +110,7 @@ export default class UI {
     
             const img = document.createElement("img");
             img.className = "calender-weather-icon";
-            img.src = `http://openweathermap.org/img/wn/${weather.list[i].icon}@2x.png`;
+            img.src = `https://openweathermap.org/img/wn/${weather.list[i].icon}@2x.png`;
     
             const div = document.createElement("div");
     
